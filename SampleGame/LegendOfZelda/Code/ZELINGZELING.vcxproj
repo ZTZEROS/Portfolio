@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16AB429C-58BB-4788-B5B3-94AA694DD87C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ZELINGZELING</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="action.h" />
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="button.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="commonMacroFunction.h" />
+    <ClInclude Include="database.h" />
+    <ClInclude Include="effect.h" />
+    <ClInclude Include="effectManager.h" />
+    <ClInclude Include="effect\blackCircle.h" />
+    <ClInclude Include="effect\raining.h" />
+    <ClInclude Include="explosionManager.h" />
+    <ClInclude Include="gameNode.h" />
+    <ClInclude Include="image.h" />
+    <ClInclude Include="imageManager.h" />
+    <ClInclude Include="itemNPC\ITEM\armours.h" />
+    <ClInclude Include="itemNPC\ITEM\bombs.h" />
+    <ClInclude Include="itemNPC\ITEM\boomerangs.h" />
+    <ClInclude Include="itemNPC\ITEM\dungeonMap.h" />
+    <ClInclude Include="itemNPC\ITEM\greenCrystals.h" />
+    <ClInclude Include="itemNPC\ITEM\itemManager.h" />
+    <ClInclude Include="itemNPC\ITEM\items.h" />
+    <ClInclude Include="itemNPC\ITEM\keys.h" />
+    <ClInclude Include="itemNPC\ITEM\lanterns.h" />
+    <ClInclude Include="itemNPC\ITEM\lifeHearts.h" />
+    <ClInclude Include="itemNPC\ITEM\purpleCrystals.h" />
+    <ClInclude Include="itemNPC\ITEM\redCrystals.h" />
+    <ClInclude Include="itemNPC\ITEM\shields.h" />
+    <ClInclude Include="itemNPC\ITEM\swords.h" />
+    <ClInclude Include="itemNPC\NPC\npc.h" />
+    <ClInclude Include="itemNPC\NPC\priest.h" />
+    <ClInclude Include="itemNPC\NPC\princess.h" />
+    <ClInclude Include="itemNPC\NPC\soldier.h" />
+    <ClInclude Include="itemNPC\NPC\uncle.h" />
+    <ClInclude Include="keyAniManager.h" />
+    <ClInclude Include="keyManager.h" />
+    <ClInclude Include="link\link.h" />
+    <ClInclude Include="loading.h" />
+    <ClInclude Include="MAPS\bossRoom.h" />
+    <ClInclude Include="MAPS\castleBasement.h" />
+    <ClInclude Include="MAPS\castle_1F.h" />
+    <ClInclude Include="MAPS\castle_2F.h" />
+    <ClInclude Include="MAPS\castle_B1F.h" />
+    <ClInclude Include="MAPS\insideHouse.h" />
+    <ClInclude Include="MAPS\mapManager.h" />
+    <ClInclude Include="MAPS\maps.h" />
+    <ClInclude Include="MAPS\outsideHouse.h" />
+    <ClInclude Include="MAPS\stairsToPrincess.h" />
+    <ClInclude Include="monster\bat.h" />
+    <ClInclude Include="monster\bluesoldier.h" />
+    <ClInclude Include="monster\boss.h" />
+    <ClInclude Include="monster\greensoldier.h" />
+    <ClInclude Include="monster\monster.h" />
+    <ClInclude Include="monster\monstermanager.h" />
+    <ClInclude Include="monster\mouse.h" />
+    <ClInclude Include="monster\snake.h" />
+    <ClInclude Include="monster\spider.h" />
+    <ClInclude Include="OBJECTS\chestBox.h" />
+    <ClInclude Include="OBJECTS\grass.h" />
+    <ClInclude Include="OBJECTS\jar.h" />
+    <ClInclude Include="OBJECTS\objects.h" />
+    <ClInclude Include="playGround.h" />
+    <ClInclude Include="progressBar.h" />
+    <ClInclude Include="randomFunction.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sceneManager.h" />
+    <ClInclude Include="scene\gamePlayScene.h" />
+    <ClInclude Include="scene\introScene.h" />
+    <ClInclude Include="scene\selectScene.h" />
+    <ClInclude Include="singletonBase.h" />
+    <ClInclude Include="soundManager.h" />
+    <ClInclude Include="stairsToPrincess.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="streamManager.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="testScene.h" />
+    <ClInclude Include="timeManager.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="txtData.h" />
+    <ClInclude Include="UIManager\Cursors.h" />
+    <ClInclude Include="UIManager\DungeonMaps.h" />
+    <ClInclude Include="UIManager\Inventories.h" />
+    <ClInclude Include="UIManager\saveLoad.h" />
+    <ClInclude Include="UIManager\StatusDisplays.h" />
+    <ClInclude Include="UIManager\UIManager.h" />
+    <ClInclude Include="UIManager\WorldMaps.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="action.cpp" />
+    <ClCompile Include="animation.cpp" />
+    <ClCompile Include="button.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="effect.cpp" />
+    <ClCompile Include="effectManager.cpp" />
+    <ClCompile Include="effect\blackCircle.cpp" />
+    <ClCompile Include="effect\raining.cpp" />
+    <ClCompile Include="explosionManager.cpp" />
+    <ClCompile Include="gameNode.cpp" />
+    <ClCompile Include="image.cpp" />
+    <ClCompile Include="imageManager.cpp" />
+    <ClCompile Include="itemNPC\ITEM\armours.cpp" />
+    <ClCompile Include="itemNPC\ITEM\bombs.cpp" />
+    <ClCompile Include="itemNPC\ITEM\boomerangs.cpp" />
+    <ClCompile Include="itemNPC\ITEM\dungeonMap.cpp" />
+    <ClCompile Include="itemNPC\ITEM\greenCrystals.cpp" />
+    <ClCompile Include="itemNPC\ITEM\itemManager.cpp" />
+    <ClCompile Include="itemNPC\ITEM\items.cpp" />
+    <ClCompile Include="itemNPC\ITEM\keys.cpp" />
+    <ClCompile Include="itemNPC\ITEM\lanterns.cpp" />
+    <ClCompile Include="itemNPC\ITEM\lifeHearts.cpp" />
+    <ClCompile Include="itemNPC\ITEM\purpleCrystals.cpp" />
+    <ClCompile Include="itemNPC\ITEM\redCrystals.cpp" />
+    <ClCompile Include="itemNPC\ITEM\shields.cpp" />
+    <ClCompile Include="itemNPC\ITEM\swords.cpp" />
+    <ClCompile Include="itemNPC\NPC\npc.cpp" />
+    <ClCompile Include="itemNPC\NPC\priest.cpp" />
+    <ClCompile Include="itemNPC\NPC\princess.cpp" />
+    <ClCompile Include="itemNPC\NPC\soldier.cpp" />
+    <ClCompile Include="itemNPC\NPC\uncle.cpp" />
+    <ClCompile Include="keyAniManager.cpp" />
+    <ClCompile Include="keyManager.cpp" />
+    <ClCompile Include="link\link.cpp" />
+    <ClCompile Include="loading.cpp" />
+    <ClCompile Include="MAPS\bossRoom.cpp" />
+    <ClCompile Include="MAPS\castleBasement.cpp" />
+    <ClCompile Include="MAPS\castle_1F.cpp" />
+    <ClCompile Include="MAPS\castle_2F.cpp" />
+    <ClCompile Include="MAPS\castle_B1F.cpp" />
+    <ClCompile Include="MAPS\insideHouse.cpp" />
+    <ClCompile Include="MAPS\mapManager+blackCircle.cpp" />
+    <ClCompile Include="MAPS\mapManager+insidetheCastle.cpp" />
+    <ClCompile Include="MAPS\mapManager+outsidCastle.cpp" />
+    <ClCompile Include="MAPS\mapManager.cpp" />
+    <ClCompile Include="MAPS\maps.cpp" />
+    <ClCompile Include="MAPS\outsideHouse.cpp" />
+    <ClCompile Include="MAPS\stairsToPrincess.cpp" />
+    <ClCompile Include="monster\bat.cpp" />
+    <ClCompile Include="monster\bluesoldier.cpp" />
+    <ClCompile Include="monster\boss.cpp" />
+    <ClCompile Include="monster\greensoldier.cpp" />
+    <ClCompile Include="monster\monster.cpp" />
+    <ClCompile Include="monster\monstermanager.cpp" />
+    <ClCompile Include="monster\mouse.cpp" />
+    <ClCompile Include="monster\snake.cpp" />
+    <ClCompile Include="monster\spider.cpp" />
+    <ClCompile Include="OBJECTS\chestBox.cpp" />
+    <ClCompile Include="OBJECTS\grass.cpp" />
+    <ClCompile Include="OBJECTS\jar.cpp" />
+    <ClCompile Include="OBJECTS\objects.cpp" />
+    <ClCompile Include="playGround + initialize.cpp" />
+    <ClCompile Include="playGround+imagePack.cpp" />
+    <ClCompile Include="playGround+update.cpp" />
+    <ClCompile Include="playGround.cpp" />
+    <ClCompile Include="progressBar.cpp" />
+    <ClCompile Include="sceneManager.cpp" />
+    <ClCompile Include="scene\gamePlayScene.cpp" />
+    <ClCompile Include="scene\introScene.cpp" />
+    <ClCompile Include="scene\selectScene.cpp" />
+    <ClCompile Include="soundManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="streamManager.cpp" />
+    <ClCompile Include="testScene.cpp" />
+    <ClCompile Include="timeManager.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="txtData.cpp" />
+    <ClCompile Include="UIManager\Cursors.cpp" />
+    <ClCompile Include="UIManager\DungeonMaps.cpp" />
+    <ClCompile Include="UIManager\Inventories.cpp" />
+    <ClCompile Include="UIManager\saveLoad.cpp" />
+    <ClCompile Include="UIManager\StatusDisplays.cpp" />
+    <ClCompile Include="UIManager\UIManager.cpp" />
+    <ClCompile Include="UIManager\WorldMaps.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="winMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="UIManager\Slot0.txt" />
+    <Text Include="UIManager\Slot1.txt" />
+    <Text Include="UIManager\Slot2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

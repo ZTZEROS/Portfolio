@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BackgroundMusic">
+      <UniqueIdentifier>{6f419c84-3004-4a7f-86b5-ec65878b3375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BackgroundMusic\Town">
+      <UniqueIdentifier>{45c1e9f5-a755-4432-8742-0dc9c24dc0b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BackgroundMusic\Dungeon">
+      <UniqueIdentifier>{e909aa52-5f6f-4f0b-bf81-0f32f3d5b9aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BackgroundMusic\AllSound">
+      <UniqueIdentifier>{b7391f47-9f53-4bf9-a777-48b67c3fafaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character">
+      <UniqueIdentifier>{0ad3cd9f-c736-41dc-bc8b-58ce4e91150d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Player">
+      <UniqueIdentifier>{ed98a98a-9162-4a89-bde3-43955a8fc667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Monster">
+      <UniqueIdentifier>{046357ad-7975-4453-ba34-fedb7fd732ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Monster\HellLady">
+      <UniqueIdentifier>{f559cf89-948d-4fb9-9ea3-d9c86c53e083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Monster\Succubus">
+      <UniqueIdentifier>{ce057d40-2ac7-4dfc-af96-d6b43fc8d964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Monster\SuccubusQueen">
+      <UniqueIdentifier>{e877bca7-a397-477c-a508-b2b53b40c052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\NPC">
+      <UniqueIdentifier>{269129cf-eadb-4779-b6f0-4c739b60e172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\NPC\Ti">
+      <UniqueIdentifier>{b27619b2-11da-4dd7-83b3-58db859dbc8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\NPC\Eire">
+      <UniqueIdentifier>{1f6eeab8-5958-4e4a-bb08-81b35ee5be5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{0d4fee88-b332-4e94-b112-d2d898b3c262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameInformation">
+      <UniqueIdentifier>{a4769273-e92d-4915-9e62-1af966623760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{cbe8eba1-690e-44a7-b516-e87234d69246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{97f235bc-e4db-44d3-ab4f-12ba4fd522e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop">
+      <UniqueIdentifier>{23de9206-f1b5-49ba-8f69-3226d043ff89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{f88c0f02-b8ec-4185-84bd-6113656a48e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Manager">
+      <UniqueIdentifier>{f59b7b5b-9e6d-46c0-aaac-ad1864165338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Mesh">
+      <UniqueIdentifier>{9439dd5c-2647-448a-99aa-91614e1fe0f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utill">
+      <UniqueIdentifier>{2a440c94-d322-4a47-9974-b42b3c1bf25b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Panel">
+      <UniqueIdentifier>{0cb07612-c8c7-4ddc-bbbb-8dae1b48890a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Particle">
+      <UniqueIdentifier>{15092feb-b217-4f4f-b5ff-45914e21f1cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Collision">
+      <UniqueIdentifier>{bb3a65d4-4b02-4c64-b364-1daad4dd5218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Action">
+      <UniqueIdentifier>{3312b86f-1820-48b8-917f-ba4034362e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\UI">
+      <UniqueIdentifier>{b7537f84-c798-4087-ba65-e51902a33a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Object">
+      <UniqueIdentifier>{d38a2fb3-12cf-4a60-b8c9-408da8d2e6ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skill">
+      <UniqueIdentifier>{c14d4216-daba-4f0a-8a13-d25d96a89e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Place">
+      <UniqueIdentifier>{ea6b4712-d28f-4192-9c55-c1114a7ccc4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Place\Town">
+      <UniqueIdentifier>{dc03b4f6-184a-4a1b-8182-ffb28d6846de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Place\Dungeon">
+      <UniqueIdentifier>{abd7d2a8-923e-41f8-b344-6d7cba35d048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Place\SuccubusRoom">
+      <UniqueIdentifier>{1076836c-2df9-4518-9e38-47b570bf6e80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Heroes\HeroesSound.h">
+      <Filter>BackgroundMusic\AllSound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\CharacData.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\ItemData.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Character\NPC\NPC.h">
+      <Filter>Character\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Character\NPC\Ti\Ti.h">
+      <Filter>Character\NPC\Ti</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Character\NPC\Eire\Eire.h">
+      <Filter>Character\NPC\Eire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\GameScene\DungeonScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\GameScene\LoadingScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\GameScene\OpeningScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\GameScene\SceneParent.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\GameScene\TestScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\GameScene\TownScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Lethita.h">
+      <Filter>Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Character\Monster\MonsterBase.h">
+      <Filter>Character\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Item_Button.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\ItemBase.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Skill.h">
+      <Filter>GameInformation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\StatInfomation.h">
+      <Filter>GameInformation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\UI_Mnager.h">
+      <Filter>GameInformation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Inventory.h">
+      <Filter>GameInformation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Heroes\Character\Monster\HellLady\HellLady.h">
+      <Filter>Character\Monster\HellLady</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemShop.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Action\ActionBase.h">
+      <Filter>Framework\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Action\ActionMove.h">
+      <Filter>Framework\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Action\ActionSequence.h">
+      <Filter>Framework\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Collision\BoundingVolume.h">
+      <Filter>Framework\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Collision\Collider_Box.h">
+      <Filter>Framework\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Collision\Collider_Sphere.h">
+      <Filter>Framework\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Collision\Collision.h">
+      <Filter>Framework\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Manager\CameraManager.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Manager\GameManager.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Manager\KeyManager.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Manager\SceneManager.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Manager\SkinnedMeshManager.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Manager\SoundManager.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Manager\TextureManager.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Manager\UI_Manager.h">
+      <Filter>Framework\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\AllocateHierarchy.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\Asciitok.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\AseFrame.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\AseLoader.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\MaterialTexture.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\Obj.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\ObjFileGroup.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\ObjLoader.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Mesh\SkinnedMesh.h">
+      <Filter>Framework\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\Barricade.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\Character.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\Character_Collision.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\Character_HeightMapMove.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\Character_MouseMove.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\Character_PathMove.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\GameObject.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\Grid.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\HeightMap.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\PathFinder.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\PathNode.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Object\Pyramid.h">
+      <Filter>Framework\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Panel\Panel_Alpha.h">
+      <Filter>Framework\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Panel\Panel_AlphaMaterial.h">
+      <Filter>Framework\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Panel\Panel_AlphaTexture.h">
+      <Filter>Framework\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Panel\Panel_ColorOP.h">
+      <Filter>Framework\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Panel\Panel_Shader.h">
+      <Filter>Framework\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Panel\Panel_Texture.h">
+      <Filter>Framework\Panel</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Particles\Particle_Base.h">
+      <Filter>Framework\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Particles\Particle_Firework.h">
+      <Filter>Framework\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Particles\Particle_Snow.h">
+      <Filter>Framework\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\UI\UI_Base.h">
+      <Filter>Framework\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\UI\UI_Button.h">
+      <Filter>Framework\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\UI\UI_Dialogue.h">
+      <Filter>Framework\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\UI\UI_Functions.h">
+      <Filter>Framework\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\UI\UI_Image.h">
+      <Filter>Framework\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\UI\UI_Quest.h">
+      <Filter>Framework\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\UI\UI_Text.h">
+      <Filter>Framework\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Util\Dijkstra.h">
+      <Filter>Framework\Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Util\RandomUtil.h">
+      <Filter>Framework\Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Util\Ray.h">
+      <Filter>Framework\Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Util\RectMake2D.h">
+      <Filter>Framework\Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\FrustumCulling.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\FVF.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\GlobalEnumeration.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Heroes.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\MemoryLeakCheck.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Particle.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Resource.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\stdafx.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Triangle.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar.h" />
+    <ClInclude Include="Character\TheSun.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemMesh.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\Monster\Succubus\Succubus.h">
+      <Filter>Character\Monster\Succubus</Filter>
+    </ClInclude>
+    <ClInclude Include="WindBlade.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Place\Dungeon\Dungeon.h">
+      <Filter>Place\Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="Place\Town\Town.h">
+      <Filter>Place\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Place\SuccubusRoom\SuccubusRoom.h">
+      <Filter>Place\SuccubusRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Place\TheSky.h">
+      <Filter>Place</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Particles\Particle_Water.h">
+      <Filter>Framework\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Place\Universe.h">
+      <Filter>Place</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Heroes\HeroesSound.cpp">
+      <Filter>BackgroundMusic\AllSound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\CharacData.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\ItemData.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Character\NPC\NPC.cpp">
+      <Filter>Character\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Character\NPC\Ti\Ti.cpp">
+      <Filter>Character\NPC\Ti</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Character\NPC\Eire\Eire.cpp">
+      <Filter>Character\NPC\Eire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\GameScene\DungeonScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\GameScene\LoadingScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\GameScene\OpeningScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\GameScene\TestScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\GameScene\TownScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Lethita.cpp">
+      <Filter>Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Character\Monster\MonsterBase.cpp">
+      <Filter>Character\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Item_Button.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\ItemBase.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Skill.cpp">
+      <Filter>GameInformation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\StatInfomation.cpp">
+      <Filter>GameInformation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\UI_Mnager.cpp">
+      <Filter>GameInformation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Inventory.cpp">
+      <Filter>GameInformation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Heroes\Character\Monster\HellLady\HellLady.cpp">
+      <Filter>Character\Monster\HellLady</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemShop.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Action\ActionBase.cpp">
+      <Filter>Framework\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Action\ActionMove.cpp">
+      <Filter>Framework\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Action\ActionSequence.cpp">
+      <Filter>Framework\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Collision\Collider_Box.cpp">
+      <Filter>Framework\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Collision\Collider_Sphere.cpp">
+      <Filter>Framework\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Collision\Collision.cpp">
+      <Filter>Framework\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Manager\CameraManager.cpp">
+      <Filter>Framework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Manager\GameManager.cpp">
+      <Filter>Framework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Manager\KeyManager.cpp">
+      <Filter>Framework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Manager\SceneManager.cpp">
+      <Filter>Framework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Manager\SkinnedMeshManager.cpp">
+      <Filter>Framework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Manager\SoundManager.cpp">
+      <Filter>Framework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Manager\TextureManager.cpp">
+      <Filter>Framework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Manager\UI_Manager.cpp">
+      <Filter>Framework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Mesh\AllocateHierarchy.cpp">
+      <Filter>Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Mesh\AseFrame.cpp">
+      <Filter>Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Mesh\AseLoader.cpp">
+      <Filter>Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Mesh\Obj.cpp">
+      <Filter>Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Mesh\ObjFileGroup.cpp">
+      <Filter>Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Mesh\ObjLoader.cpp">
+      <Filter>Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Mesh\SkinnedMesh.cpp">
+      <Filter>Framework\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\Barricade.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\Character.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\Character_Collision.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\Character_HeightMapMove.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\Character_MouseMove.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\Character_PathMove.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\GameObject.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\Grid.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\HeightMap.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\PathFinder.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\PathNode.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Object\Pyramid.cpp">
+      <Filter>Framework\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Panel\Panel_Alpha.cpp">
+      <Filter>Framework\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Panel\Panel_AlphaMaterial.cpp">
+      <Filter>Framework\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Panel\Panel_AlphaTexture.cpp">
+      <Filter>Framework\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Panel\Panel_ColorOP.cpp">
+      <Filter>Framework\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Panel\Panel_Shader.cpp">
+      <Filter>Framework\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Panel\Panel_Texture.cpp">
+      <Filter>Framework\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Particles\Particle_Base.cpp">
+      <Filter>Framework\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Particles\Particle_Firework.cpp">
+      <Filter>Framework\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Particles\Particle_Snow.cpp">
+      <Filter>Framework\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\UI\UI_Base.cpp">
+      <Filter>Framework\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\UI\UI_Button.cpp">
+      <Filter>Framework\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\UI\UI_Dialogue.cpp">
+      <Filter>Framework\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\UI\UI_Functions.cpp">
+      <Filter>Framework\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\UI\UI_Image.cpp">
+      <Filter>Framework\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\UI\UI_Quest.cpp">
+      <Filter>Framework\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\UI\UI_Text.cpp">
+      <Filter>Framework\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Util\Dijkstra.cpp">
+      <Filter>Framework\Utill</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Util\RandomUtil.cpp">
+      <Filter>Framework\Utill</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Util\Ray.cpp">
+      <Filter>Framework\Utill</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\FrustumCulling.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Heroes.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\stdafx.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="Character\TheSun.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemMesh.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Character\Monster\Succubus\Succubus.cpp">
+      <Filter>Character\Monster\Succubus</Filter>
+    </ClCompile>
+    <ClCompile Include="WindBlade.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Place\Dungeon\Dungeon.cpp">
+      <Filter>Place\Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="Place\Town\Town.cpp">
+      <Filter>Place\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Place\SuccubusRoom\SuccubusRoom.cpp">
+      <Filter>Place\SuccubusRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Place\TheSky.cpp">
+      <Filter>Place</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Particles\Particle_Water.cpp">
+      <Filter>Framework\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Place\Universe.cpp">
+      <Filter>Place</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

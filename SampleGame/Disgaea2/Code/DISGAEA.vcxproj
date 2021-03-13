@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{16AB429C-58BB-4788-B5B3-94AA694DD87C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DISGAEA</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="action.h" />
+    <ClInclude Include="Actors\ActorsManagers.h" />
+    <ClInclude Include="Actors\DNAs\DNAs.h" />
+    <ClInclude Include="Actors\DNAs\EnemiesDNAs.h" />
+    <ClInclude Include="Actors\DNAs\HeroesDNAs.h" />
+    <ClInclude Include="Actors\EnemiesManagers.h" />
+    <ClInclude Include="Actors\Enemies\ArmorKnightFemales.h" />
+    <ClInclude Include="Actors\Enemies\Enemies.h" />
+    <ClInclude Include="Actors\Enemies\HealerMales.h" />
+    <ClInclude Include="Actors\HeroesManagers.h" />
+    <ClInclude Include="Actors\Heroes\Adells.h" />
+    <ClInclude Include="Actors\Heroes\Axels.h" />
+    <ClInclude Include="Actors\Heroes\Etnas.h" />
+    <ClInclude Include="Actors\Heroes\Fenrichs.h" />
+    <ClInclude Include="Actors\Heroes\Flonnes.h" />
+    <ClInclude Include="Actors\Heroes\Heroes.h" />
+    <ClInclude Include="Actors\Heroes\Priers.h" />
+    <ClInclude Include="Actors\IntegratedAIs.h" />
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="AstarManager.h" />
+    <ClInclude Include="battlemap.h" />
+    <ClInclude Include="battleMenu.h" />
+    <ClInclude Include="battleScene.h" />
+    <ClInclude Include="button.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="commonMacroFunction.h" />
+    <ClInclude Include="cursor.h" />
+    <ClInclude Include="database.h" />
+    <ClInclude Include="effect.h" />
+    <ClInclude Include="effectManager.h" />
+    <ClInclude Include="explosionManager.h" />
+    <ClInclude Include="gameNode.h" />
+    <ClInclude Include="HeroList.h" />
+    <ClInclude Include="image.h" />
+    <ClInclude Include="imageManager.h" />
+    <ClInclude Include="Inven&amp;shop\armorStoreBuy.h" />
+    <ClInclude Include="Inven&amp;shop\armorStoreSale.h" />
+    <ClInclude Include="Inven&amp;shop\armorStoreView.h" />
+    <ClInclude Include="Inven&amp;shop\equipmentView.h" />
+    <ClInclude Include="Inven&amp;shop\inventory.h" />
+    <ClInclude Include="Inven&amp;shop\invenView.h" />
+    <ClInclude Include="Inven&amp;shop\itemInfo.h" />
+    <ClInclude Include="Inven&amp;shop\itemList.h" />
+    <ClInclude Include="Inven&amp;shop\statinven.h" />
+    <ClInclude Include="Inven&amp;shop\statusUI.h" />
+    <ClInclude Include="Inven&amp;shop\wareHouse.h" />
+    <ClInclude Include="Inven&amp;shop\weaponStoreBuy.h" />
+    <ClInclude Include="Inven&amp;shop\weaponStoreSale.h" />
+    <ClInclude Include="Inven&amp;shop\weaponStoreView.h" />
+    <ClInclude Include="keyAniManager.h" />
+    <ClInclude Include="keyManager.h" />
+    <ClInclude Include="loading.h" />
+    <ClInclude Include="maptool.h" />
+    <ClInclude Include="playGround.h" />
+    <ClInclude Include="progressBar.h" />
+    <ClInclude Include="randomFunction.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sceneManager.h" />
+    <ClInclude Include="singletonBase.h" />
+    <ClInclude Include="soundManager.h" />
+    <ClInclude Include="statusOverviewPanel.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="streamManager.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tileNode.h" />
+    <ClInclude Include="timeManager.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="title.h" />
+    <ClInclude Include="townmap.h" />
+    <ClInclude Include="turnMenu.h" />
+    <ClInclude Include="txtData.h" />
+    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="UIstat.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="action.cpp" />
+    <ClCompile Include="Actors\ActorsManagers.cpp" />
+    <ClCompile Include="Actors\DNAs\DNAs.cpp" />
+    <ClCompile Include="Actors\DNAs\EnemiesDNAs.cpp" />
+    <ClCompile Include="Actors\DNAs\HeroesDNAs.cpp" />
+    <ClCompile Include="Actors\EnemiesManagers.cpp" />
+    <ClCompile Include="Actors\Enemies\ArmorKnightFemales.cpp" />
+    <ClCompile Include="Actors\Enemies\Enemies.cpp" />
+    <ClCompile Include="Actors\Enemies\HealerMales.cpp" />
+    <ClCompile Include="Actors\HeroesManagers.cpp" />
+    <ClCompile Include="Actors\Heroes\Adells.cpp" />
+    <ClCompile Include="Actors\Heroes\Axels.cpp" />
+    <ClCompile Include="Actors\Heroes\Etnas.cpp" />
+    <ClCompile Include="Actors\Heroes\Fenrichs.cpp" />
+    <ClCompile Include="Actors\Heroes\Flonnes.cpp" />
+    <ClCompile Include="Actors\Heroes\Heroes.cpp" />
+    <ClCompile Include="Actors\Heroes\Priers.cpp" />
+    <ClCompile Include="Actors\IntegratedAIs.cpp" />
+    <ClCompile Include="animation.cpp" />
+    <ClCompile Include="AstarManager.cpp" />
+    <ClCompile Include="battlemap.cpp" />
+    <ClCompile Include="battleMenu.cpp" />
+    <ClCompile Include="battlescene+camera.cpp" />
+    <ClCompile Include="battleScene+EnemyTurn.cpp" />
+    <ClCompile Include="battleScene+mainControl.cpp" />
+    <ClCompile Include="battleScene+UI.cpp" />
+    <ClCompile Include="battleScene.cpp" />
+    <ClCompile Include="button.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="cursor.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="effect.cpp" />
+    <ClCompile Include="effectManager.cpp" />
+    <ClCompile Include="explosionManager.cpp" />
+    <ClCompile Include="gameNode.cpp" />
+    <ClCompile Include="HeroList.cpp" />
+    <ClCompile Include="image.cpp" />
+    <ClCompile Include="imageManager.cpp" />
+    <ClCompile Include="Inven&amp;shop\armorStoreBuy.cpp" />
+    <ClCompile Include="Inven&amp;shop\armorStoreSale.cpp" />
+    <ClCompile Include="Inven&amp;shop\armorStoreView.cpp" />
+    <ClCompile Include="Inven&amp;shop\equipmentView.cpp" />
+    <ClCompile Include="Inven&amp;shop\inventory.cpp" />
+    <ClCompile Include="Inven&amp;shop\invenView.cpp" />
+    <ClCompile Include="Inven&amp;shop\itemInfo.cpp" />
+    <ClCompile Include="Inven&amp;shop\statinven.cpp" />
+    <ClCompile Include="Inven&amp;shop\statusUI.cpp" />
+    <ClCompile Include="Inven&amp;shop\wareHouse.cpp" />
+    <ClCompile Include="Inven&amp;shop\weaponStoreBuy.cpp" />
+    <ClCompile Include="Inven&amp;shop\weaponStoreSale.cpp" />
+    <ClCompile Include="Inven&amp;shop\weaponStoreView.cpp" />
+    <ClCompile Include="keyAniManager.cpp" />
+    <ClCompile Include="keyManager.cpp" />
+    <ClCompile Include="loading.cpp" />
+    <ClCompile Include="maptool.cpp" />
+    <ClCompile Include="playGround.cpp" />
+    <ClCompile Include="progressBar.cpp" />
+    <ClCompile Include="sceneManager.cpp" />
+    <ClCompile Include="soundManager.cpp" />
+    <ClCompile Include="statusOverviewPanel.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="streamManager.cpp" />
+    <ClCompile Include="timeManager.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="title.cpp" />
+    <ClCompile Include="townmap.cpp" />
+    <ClCompile Include="turnMenu.cpp" />
+    <ClCompile Include="txtData.cpp" />
+    <ClCompile Include="UI+IMAGE.cpp" />
+    <ClCompile Include="UI+progressBar.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="UIstat.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="winMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Inven&amp;shop\inventory.inv" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

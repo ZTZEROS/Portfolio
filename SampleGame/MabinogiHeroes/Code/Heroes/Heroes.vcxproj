@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{680D2594-E0B5-4E9F-B2AA-936E4A06A8F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Heroes</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\현하\Desktop\3D포폴\3DSVN\trunk\Heroes\Heroes\Framework;D:\FuckSuccubus\trunk\Heroes\Heroes\Framework;$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\FuckSuccubus\trunk\Heroes\Heroes;D:\FuckSuccubus\trunk\Heroes\Framework;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\FuckSuccubus\trunk\Heroes\Heroes\Framework;$(DXSDK_DIR)Include;$(IncludePath);C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\현하\Desktop\3D포폴\3DSVN\trunk\Heroes\Heroes\Framework</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\FuckSuccubus\trunk\Heroes\Heroes;D:\FuckSuccubus\trunk\Heroes\Framework;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath);C:\Users\현하\Desktop\3D포폴\3DSVN\trunk\Heroes\Heroes;C:\Users\현하\Desktop\3D포폴\3DSVN\trunk\Heroes\Framework;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)\..\..\Execute\</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Heroes\CharacData.h" />
+    <ClInclude Include="..\Heroes\Character\Monster\HellLady\HellLady.h" />
+    <ClInclude Include="..\Heroes\Character\Monster\MonsterBase.h" />
+    <ClInclude Include="..\Heroes\Character\NPC\Eire\Eire.h" />
+    <ClInclude Include="..\Heroes\Character\NPC\NPC.h" />
+    <ClInclude Include="..\Heroes\Character\NPC\Ti\Ti.h" />
+    <ClInclude Include="..\Heroes\GameScene\DungeonScene.h" />
+    <ClInclude Include="..\Heroes\GameScene\LoadingScene.h" />
+    <ClInclude Include="..\Heroes\GameScene\OpeningScene.h" />
+    <ClInclude Include="..\Heroes\GameScene\SceneParent.h" />
+    <ClInclude Include="..\Heroes\GameScene\TestScene.h" />
+    <ClInclude Include="..\Heroes\GameScene\TownScene.h" />
+    <ClInclude Include="..\Heroes\HeroesSound.h" />
+    <ClInclude Include="..\Heroes\Inventory.h" />
+    <ClInclude Include="..\Heroes\ItemBase.h" />
+    <ClInclude Include="..\Heroes\ItemData.h" />
+    <ClInclude Include="..\Heroes\Item_Button.h" />
+    <ClInclude Include="..\Heroes\Lethita.h" />
+    <ClInclude Include="..\Heroes\Skill.h" />
+    <ClInclude Include="..\Heroes\StatInfomation.h" />
+    <ClInclude Include="..\Heroes\UI_Mnager.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Character\Monster\Succubus\Succubus.h" />
+    <ClInclude Include="Character\TheSun.h" />
+    <ClInclude Include="Framework\Action\ActionBase.h" />
+    <ClInclude Include="Framework\Action\ActionMove.h" />
+    <ClInclude Include="Framework\Action\ActionSequence.h" />
+    <ClInclude Include="Framework\Collision\BoundingVolume.h" />
+    <ClInclude Include="Framework\Collision\Collider_Box.h" />
+    <ClInclude Include="Framework\Collision\Collider_Sphere.h" />
+    <ClInclude Include="Framework\Collision\Collision.h" />
+    <ClInclude Include="Framework\FrustumCulling.h" />
+    <ClInclude Include="Framework\FVF.h" />
+    <ClInclude Include="Framework\GlobalEnumeration.h" />
+    <ClInclude Include="Framework\Heroes.h" />
+    <ClInclude Include="Framework\Manager\CameraManager.h" />
+    <ClInclude Include="Framework\Manager\GameManager.h" />
+    <ClInclude Include="Framework\Manager\KeyManager.h" />
+    <ClInclude Include="Framework\Manager\SceneManager.h" />
+    <ClInclude Include="Framework\Manager\SkinnedMeshManager.h" />
+    <ClInclude Include="Framework\Manager\SoundManager.h" />
+    <ClInclude Include="Framework\Manager\TextureManager.h" />
+    <ClInclude Include="Framework\Manager\UI_Manager.h" />
+    <ClInclude Include="Framework\MemoryLeakCheck.h" />
+    <ClInclude Include="Framework\Mesh\AllocateHierarchy.h" />
+    <ClInclude Include="Framework\Mesh\Asciitok.h" />
+    <ClInclude Include="Framework\Mesh\AseFrame.h" />
+    <ClInclude Include="Framework\Mesh\AseLoader.h" />
+    <ClInclude Include="Framework\Mesh\MaterialTexture.h" />
+    <ClInclude Include="Framework\Mesh\Obj.h" />
+    <ClInclude Include="Framework\Mesh\ObjFileGroup.h" />
+    <ClInclude Include="Framework\Mesh\ObjLoader.h" />
+    <ClInclude Include="Framework\Mesh\SkinnedMesh.h" />
+    <ClInclude Include="Framework\Object\Barricade.h" />
+    <ClInclude Include="Framework\Object\Character.h" />
+    <ClInclude Include="Framework\Object\Character_Collision.h" />
+    <ClInclude Include="Framework\Object\Character_HeightMapMove.h" />
+    <ClInclude Include="Framework\Object\Character_MouseMove.h" />
+    <ClInclude Include="Framework\Object\Character_PathMove.h" />
+    <ClInclude Include="Framework\Object\GameObject.h" />
+    <ClInclude Include="Framework\Object\Grid.h" />
+    <ClInclude Include="Framework\Object\HeightMap.h" />
+    <ClInclude Include="Framework\Object\PathFinder.h" />
+    <ClInclude Include="Framework\Object\PathNode.h" />
+    <ClInclude Include="Framework\Object\Pyramid.h" />
+    <ClInclude Include="Framework\Panel\Panel_Alpha.h" />
+    <ClInclude Include="Framework\Panel\Panel_AlphaMaterial.h" />
+    <ClInclude Include="Framework\Panel\Panel_AlphaTexture.h" />
+    <ClInclude Include="Framework\Panel\Panel_ColorOP.h" />
+    <ClInclude Include="Framework\Panel\Panel_Shader.h" />
+    <ClInclude Include="Framework\Panel\Panel_Texture.h" />
+    <ClInclude Include="Framework\Particle.h" />
+    <ClInclude Include="Framework\Particles\Particle_Base.h" />
+    <ClInclude Include="Framework\Particles\Particle_Firework.h" />
+    <ClInclude Include="Framework\Particles\Particle_Snow.h" />
+    <ClInclude Include="Framework\Particles\Particle_Water.h" />
+    <ClInclude Include="Framework\Resource.h" />
+    <ClInclude Include="Framework\stdafx.h" />
+    <ClInclude Include="Framework\Triangle.h" />
+    <ClInclude Include="Framework\UI\UI_Base.h" />
+    <ClInclude Include="Framework\UI\UI_Button.h" />
+    <ClInclude Include="Framework\UI\UI_Dialogue.h" />
+    <ClInclude Include="Framework\UI\UI_Functions.h" />
+    <ClInclude Include="Framework\UI\UI_Image.h" />
+    <ClInclude Include="Framework\UI\UI_Quest.h" />
+    <ClInclude Include="Framework\UI\UI_Text.h" />
+    <ClInclude Include="Framework\Util\Dijkstra.h" />
+    <ClInclude Include="Framework\Util\RandomUtil.h" />
+    <ClInclude Include="Framework\Util\Ray.h" />
+    <ClInclude Include="Framework\Util\RectMake2D.h" />
+    <ClInclude Include="ItemMesh.h" />
+    <ClInclude Include="ItemShop.h" />
+    <ClInclude Include="Place\Dungeon\Dungeon.h" />
+    <ClInclude Include="Place\TheSky.h" />
+    <ClInclude Include="Place\SuccubusRoom\SuccubusRoom.h" />
+    <ClInclude Include="Place\Town\Town.h" />
+    <ClInclude Include="Place\Universe.h" />
+    <ClInclude Include="ProgressBar.h" />
+    <ClInclude Include="WindBlade.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Heroes\CharacData.cpp" />
+    <ClCompile Include="..\Heroes\Character\Monster\HellLady\HellLady.cpp" />
+    <ClCompile Include="..\Heroes\Character\Monster\MonsterBase.cpp" />
+    <ClCompile Include="..\Heroes\Character\NPC\Eire\Eire.cpp" />
+    <ClCompile Include="..\Heroes\Character\NPC\NPC.cpp" />
+    <ClCompile Include="..\Heroes\Character\NPC\Ti\Ti.cpp" />
+    <ClCompile Include="..\Heroes\GameScene\DungeonScene.cpp" />
+    <ClCompile Include="..\Heroes\GameScene\LoadingScene.cpp" />
+    <ClCompile Include="..\Heroes\GameScene\OpeningScene.cpp" />
+    <ClCompile Include="..\Heroes\GameScene\TestScene.cpp" />
+    <ClCompile Include="..\Heroes\GameScene\TownScene.cpp" />
+    <ClCompile Include="..\Heroes\HeroesSound.cpp" />
+    <ClCompile Include="..\Heroes\Inventory.cpp" />
+    <ClCompile Include="..\Heroes\ItemBase.cpp" />
+    <ClCompile Include="..\Heroes\ItemData.cpp" />
+    <ClCompile Include="..\Heroes\Item_Button.cpp" />
+    <ClCompile Include="..\Heroes\Lethita.cpp" />
+    <ClCompile Include="..\Heroes\Skill.cpp" />
+    <ClCompile Include="..\Heroes\StatInfomation.cpp" />
+    <ClCompile Include="..\Heroes\UI_Mnager.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Character\Monster\Succubus\Succubus.cpp" />
+    <ClCompile Include="Character\TheSun.cpp" />
+    <ClCompile Include="Framework\Action\ActionBase.cpp" />
+    <ClCompile Include="Framework\Action\ActionMove.cpp" />
+    <ClCompile Include="Framework\Action\ActionSequence.cpp" />
+    <ClCompile Include="Framework\Collision\Collider_Box.cpp" />
+    <ClCompile Include="Framework\Collision\Collider_Sphere.cpp" />
+    <ClCompile Include="Framework\Collision\Collision.cpp" />
+    <ClCompile Include="Framework\FrustumCulling.cpp" />
+    <ClCompile Include="Framework\Heroes.cpp" />
+    <ClCompile Include="Framework\Manager\CameraManager.cpp" />
+    <ClCompile Include="Framework\Manager\GameManager.cpp" />
+    <ClCompile Include="Framework\Manager\KeyManager.cpp" />
+    <ClCompile Include="Framework\Manager\SceneManager.cpp" />
+    <ClCompile Include="Framework\Manager\SkinnedMeshManager.cpp" />
+    <ClCompile Include="Framework\Manager\SoundManager.cpp" />
+    <ClCompile Include="Framework\Manager\TextureManager.cpp" />
+    <ClCompile Include="Framework\Manager\UI_Manager.cpp" />
+    <ClCompile Include="Framework\Mesh\AllocateHierarchy.cpp" />
+    <ClCompile Include="Framework\Mesh\AseFrame.cpp" />
+    <ClCompile Include="Framework\Mesh\AseLoader.cpp" />
+    <ClCompile Include="Framework\Mesh\Obj.cpp" />
+    <ClCompile Include="Framework\Mesh\ObjFileGroup.cpp" />
+    <ClCompile Include="Framework\Mesh\ObjLoader.cpp" />
+    <ClCompile Include="Framework\Mesh\SkinnedMesh.cpp" />
+    <ClCompile Include="Framework\Object\Barricade.cpp" />
+    <ClCompile Include="Framework\Object\Character.cpp" />
+    <ClCompile Include="Framework\Object\Character_Collision.cpp" />
+    <ClCompile Include="Framework\Object\Character_HeightMapMove.cpp" />
+    <ClCompile Include="Framework\Object\Character_MouseMove.cpp" />
+    <ClCompile Include="Framework\Object\Character_PathMove.cpp" />
+    <ClCompile Include="Framework\Object\GameObject.cpp" />
+    <ClCompile Include="Framework\Object\Grid.cpp" />
+    <ClCompile Include="Framework\Object\HeightMap.cpp" />
+    <ClCompile Include="Framework\Object\PathFinder.cpp" />
+    <ClCompile Include="Framework\Object\PathNode.cpp" />
+    <ClCompile Include="Framework\Object\Pyramid.cpp" />
+    <ClCompile Include="Framework\Panel\Panel_Alpha.cpp" />
+    <ClCompile Include="Framework\Panel\Panel_AlphaMaterial.cpp" />
+    <ClCompile Include="Framework\Panel\Panel_AlphaTexture.cpp" />
+    <ClCompile Include="Framework\Panel\Panel_ColorOP.cpp" />
+    <ClCompile Include="Framework\Panel\Panel_Shader.cpp" />
+    <ClCompile Include="Framework\Panel\Panel_Texture.cpp" />
+    <ClCompile Include="Framework\Particles\Particle_Base.cpp" />
+    <ClCompile Include="Framework\Particles\Particle_Firework.cpp" />
+    <ClCompile Include="Framework\Particles\Particle_Snow.cpp" />
+    <ClCompile Include="Framework\Particles\Particle_Water.cpp" />
+    <ClCompile Include="Framework\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Framework\UI\UI_Base.cpp" />
+    <ClCompile Include="Framework\UI\UI_Button.cpp" />
+    <ClCompile Include="Framework\UI\UI_Dialogue.cpp" />
+    <ClCompile Include="Framework\UI\UI_Functions.cpp" />
+    <ClCompile Include="Framework\UI\UI_Image.cpp" />
+    <ClCompile Include="Framework\UI\UI_Quest.cpp" />
+    <ClCompile Include="Framework\UI\UI_Text.cpp" />
+    <ClCompile Include="Framework\Util\Dijkstra.cpp" />
+    <ClCompile Include="Framework\Util\RandomUtil.cpp" />
+    <ClCompile Include="Framework\Util\Ray.cpp" />
+    <ClCompile Include="ItemMesh.cpp" />
+    <ClCompile Include="ItemShop.cpp" />
+    <ClCompile Include="Place\Dungeon\Dungeon.cpp" />
+    <ClCompile Include="Place\TheSky.cpp" />
+    <ClCompile Include="Place\SuccubusRoom\SuccubusRoom.cpp" />
+    <ClCompile Include="Place\Town\Town.cpp" />
+    <ClCompile Include="Place\Universe.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="WindBlade.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,97 @@
+#pragma once
+
+enum ADVANCED_LOGIN_LOCAL_CONSTANT
+{
+	ADVANCED_LOGIN_REAL_NAME_LENGTH = 20,
+	ADVANCED_LOGIN_NICKNAME_LENGTH = 20,
+	ADVANCED_LOGIN_PLAYER_KEY_LENGTH = 64,
+};
+
+enum ADVANCED_LOGIN_CLIENT_REQUEST_INDEX
+{
+	ADVANCED_LOGIN_CLIENT_REQUEST_LOGIN = 101,
+
+	ADVANCED_LOGIN_CLIENT_REQUEST_COUNT = 1
+};
+
+enum ADVANCED_LOGIN_SERVER_REQUEST_INDEX
+{
+	ADVANCED_LOGIN_SERVER_REQUEST_LINK = 10001,
+	ADVANCED_LOGIN_SERVER_REQUEST_LOGIN_CONFIRM = 10002,
+
+	ADVANCED_LOGIN_SERVER_REQUEST_COUNT = 2
+};
+
+enum ADVANCED_CHAT_SERVER_RESPONSE_INDEX
+{
+	ADVANCED_CHAT_SERVER_RESPONSE_LINK = 10001,
+	ADVANCED_CHAT_SERVER_RESPONSE_LOGIN_CONFIRM = 10003,
+
+	ADVANCED_CHAT_SERVER_RESPONSE_COUNT
+};
+
+enum ADVANCED_LOGIN_SERVER_RESPONSE_INDEX
+{
+	ADVANCED_LOGIN_SERVER_RESPONSE_LOGIN = 102,
+
+	ADVANCED_LOGIN_SERVER_RESPONSE_LINK = 10001,
+	ADVANCED_LOGIN_SERVER_RESPONSE_LOGIN_CONFIRM = 10003,
+
+	ADVANCED_LOGIN_CLIENT_RESPONSE_COUNT = 2
+};
+
+enum ADVANCED_LOGIN_SERVER_LOGIN_STATUS_INDEX
+{
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_NONE = -1,
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_FAILURE,
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_SUCCESS,
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_GAME,
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_NO_ACCOUNT,
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_NO_SESSION,
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_NO_STATUS,
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_NO_SERVER,
+
+	ADVANCED_LOGIN_SERVER_LOGIN_STATUS_COUNT = 8,
+};
+
+struct AdvancedLoginClientServer
+{
+	UINT64 SessionKey;
+
+	DWORD PreviousHeartbeatTime;
+
+	SRWLOCK Lock;
+};
+
+struct AdvancedLoginClientPlayer
+{
+	UINT64 SessionKey; //SessionID
+
+	UINT64 AccountKey; //AccountNo
+	BYTE Status;
+	WCHAR RealName[ADVANCED_LOGIN_REAL_NAME_LENGTH];
+	WCHAR Nickname[ADVANCED_LOGIN_NICKNAME_LENGTH];
+	CHAR PlayerKey[ADVANCED_LOGIN_PLAYER_KEY_LENGTH];
+
+	DWORD PreviousHeartbeatTime;
+
+	SRWLOCK Lock;
+};
+
+struct AdvancedLoginWork
+{
+	UINT64 SessionKey;
+	SerialPacketQueue<IOCP_PacketHeader>* PacketSPQ_Address;
+};
+
+typedef list<AdvancedLoginClientServer> AdvancedLoginClientServerL;
+typedef list<AdvancedLoginClientServer>::iterator AdvancedLoginClientServerLI;
+
+typedef list<AdvancedLoginClientServer*> AdvancedLoginClientServerAddressL;
+typedef list<AdvancedLoginClientServer*>::iterator AdvancedLoginClientServerAdressLI;
+
+typedef list<AdvancedLoginClientPlayer> AdvancedLoginClientPlayerL;
+typedef list<AdvancedLoginClientPlayer>::iterator AdvancedLoginClientPlayerLI;
+
+typedef list<AdvancedLoginClientPlayer*> AdvancedLoginClientPlayerAddressL;
+typedef list<AdvancedLoginClientPlayer*>::iterator AdvancedLoginClientPlayerAddressLI;

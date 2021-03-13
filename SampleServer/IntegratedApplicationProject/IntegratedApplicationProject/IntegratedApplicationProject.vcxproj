@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9E7D90CB-2767-44A6-8372-A3BEB4E94A32}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>IntegratedApplicationProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="SubApplication\Console\AdvancedChat\AdvancedChat.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedChat\AdvancedChatServer.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedChat\ChatLAN_Client.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedChat\ChatLAN_Server.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedChat\ChatWAN_Server.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLAN\AdvancedLAN.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLAN\AdvancedLAN_Server.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLAN\BaseLAN_Server.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLAN\EchoLAN_Server.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLogin\AdvancedLogin.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLogin\AdvancedLoginServer.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLogin\LoginLAN_Client.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLogin\LoginLAN_Server.h" />
+    <ClInclude Include="SubApplication\Console\AdvancedLogin\LoginWAN_Server.h" />
+    <ClInclude Include="SubApplication\Console\Game\Game.h" />
+    <ClInclude Include="SubApplication\Console\Game\GameServer.h" />
+    <ClInclude Include="SubApplication\Console\LockFreeMemoryPool\LockFreeMemoryPool.h" />
+    <ClInclude Include="SubApplication\Console\Monitor\Monitor.h" />
+    <ClInclude Include="SubApplication\Console\Monitor\MonitorInnerServer.h" />
+    <ClInclude Include="SubApplication\Console\Monitor\MonitorOuterServer.h" />
+    <ClInclude Include="SubApplication\Console\Monitor\MonitorServer.h" />
+    <ClInclude Include="SubApplication\Console\PerformanceDataHelper\PerformanceDataHelper.h" />
+    <ClInclude Include="SubApplication\Console\ThreadLocalMemoryPool\ThreadLocalMemoryPool.h" />
+    <ClInclude Include="System\DatabaseHandler\DatabaseHandler.h" />
+    <ClInclude Include="System\DatabaseHandler\ThreadLocalDatabaseHandler.h" />
+    <ClInclude Include="System\Network\IOCP\IOCP.h" />
+    <ClInclude Include="System\Network\IOCP\IOCP_Client\IOCP_Client.h" />
+    <ClInclude Include="System\Network\IOCP\IOCP_InnerServer\IOCP_InnerServer.h" />
+    <ClInclude Include="System\Network\IOCP\IOCP_OuterServer\IOCP_OuterServer.h" />
+    <ClInclude Include="System\Network\IOCP\IOCP_Server\IOCP_Server.h" />
+    <ClInclude Include="System\Log\Log.h" />
+    <ClInclude Include="IntegratedApplicationProject.h" />
+    <ClInclude Include="System\MemoryDumper\MemoryDumper.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SubApplication\Console\Console.h" />
+    <ClInclude Include="SubApplication\Console\Experiment\JurassicWar.h" />
+    <ClInclude Include="SubApplication\Console\Experiment\JurassicWarServer.h" />
+    <ClInclude Include="SubApplication\Console\Fighter\Fighter.h" />
+    <ClInclude Include="SubApplication\Console\Fighter\FighterServer.h" />
+    <ClInclude Include="SubApplication\Console\Fighter\PacketDefine.h" />
+    <ClInclude Include="SubApplication\Console\IOCP_Chat\IOCP_Chat.h" />
+    <ClInclude Include="SubApplication\Console\IOCP_Chat\IOCP_ChatClient.h" />
+    <ClInclude Include="SubApplication\Console\IOCP_Chat\IOCP_ChatServer.h" />
+    <ClInclude Include="SubApplication\Console\MySQL\MySQL.h" />
+    <ClInclude Include="SubApplication\Console\MySQL\MySQL_Client.h" />
+    <ClInclude Include="SubApplication\Console\MySQL\MySQL_Example.h" />
+    <ClInclude Include="SubApplication\Windows\Windows.h" />
+    <ClInclude Include="System\Animation\Animation.h" />
+    <ClInclude Include="System\Astar\Astar.h" />
+    <ClInclude Include="System\BitmapBackBuffer\BitmapBackBuffer.h" />
+    <ClInclude Include="System\BitmapImage\BitmapImage.h" />
+    <ClInclude Include="System\Bresenham\BresenhamLine.h" />
+    <ClInclude Include="System\Exception\Exception.h" />
+    <ClInclude Include="System\GlobalHeader\GlobalDefinition.h" />
+    <ClInclude Include="System\GlobalHeader\GlobalEnumeration.h" />
+    <ClInclude Include="System\GlobalHeader\GlobalInclusion.h" />
+    <ClInclude Include="System\GlobalHeader\GlobalStructure.h" />
+    <ClInclude Include="System\GlobalHeader\GlobalTypeDefinition.h" />
+    <ClInclude Include="System\GlobalHeader\GlobalUnion.h" />
+    <ClInclude Include="System\JumpPointSearch\JumpPointSearch.h" />
+    <ClInclude Include="System\MemoryAllocator\MemoryAllocator.h" />
+    <ClInclude Include="System\MySQL\include\big_endian.h" />
+    <ClInclude Include="System\MySQL\include\binary_log_types.h" />
+    <ClInclude Include="System\MySQL\include\byte_order_generic.h" />
+    <ClInclude Include="System\MySQL\include\byte_order_generic_x86.h" />
+    <ClInclude Include="System\MySQL\include\decimal.h" />
+    <ClInclude Include="System\MySQL\include\errmsg.h" />
+    <ClInclude Include="System\MySQL\include\keycache.h" />
+    <ClInclude Include="System\MySQL\include\little_endian.h" />
+    <ClInclude Include="System\MySQL\include\mysql.h" />
+    <ClInclude Include="System\MySQL\include\mysqld_ername.h" />
+    <ClInclude Include="System\MySQL\include\mysqld_error.h" />
+    <ClInclude Include="System\MySQL\include\mysql\client_authentication.h" />
+    <ClInclude Include="System\MySQL\include\mysql\client_plugin.h" />
+    <ClInclude Include="System\MySQL\include\mysql\get_password.h" />
+    <ClInclude Include="System\MySQL\include\mysql\mysql_lex_string.h" />
+    <ClInclude Include="System\MySQL\include\mysql\plugin_auth_common.h" />
+    <ClInclude Include="System\MySQL\include\mysql\plugin_trace.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_file.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_idle.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_mdl.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_memory.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_ps.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_socket.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_sp.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_stage.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_statement.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_table.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_thread.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\mysql_transaction.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\psi.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\psi_base.h" />
+    <ClInclude Include="System\MySQL\include\mysql\psi\psi_memory.h" />
+    <ClInclude Include="System\MySQL\include\mysql\service_mysql_alloc.h" />
+    <ClInclude Include="System\MySQL\include\mysql\service_my_snprintf.h" />
+    <ClInclude Include="System\MySQL\include\mysql_com.h" />
+    <ClInclude Include="System\MySQL\include\mysql_com_server.h" />
+    <ClInclude Include="System\MySQL\include\mysql_embed.h" />
+    <ClInclude Include="System\MySQL\include\mysql_time.h" />
+    <ClInclude Include="System\MySQL\include\mysql_version.h" />
+    <ClInclude Include="System\MySQL\include\my_alloc.h" />
+    <ClInclude Include="System\MySQL\include\my_byteorder.h" />
+    <ClInclude Include="System\MySQL\include\my_command.h" />
+    <ClInclude Include="System\MySQL\include\my_compiler.h" />
+    <ClInclude Include="System\MySQL\include\my_config.h" />
+    <ClInclude Include="System\MySQL\include\my_dbug.h" />
+    <ClInclude Include="System\MySQL\include\my_dir.h" />
+    <ClInclude Include="System\MySQL\include\my_getopt.h" />
+    <ClInclude Include="System\MySQL\include\my_global.h" />
+    <ClInclude Include="System\MySQL\include\my_list.h" />
+    <ClInclude Include="System\MySQL\include\my_sys.h" />
+    <ClInclude Include="System\MySQL\include\my_thread.h" />
+    <ClInclude Include="System\MySQL\include\my_thread_local.h" />
+    <ClInclude Include="System\MySQL\include\my_xml.h" />
+    <ClInclude Include="System\MySQL\include\m_ctype.h" />
+    <ClInclude Include="System\MySQL\include\m_string.h" />
+    <ClInclude Include="System\MySQL\include\sql_common.h" />
+    <ClInclude Include="System\MySQL\include\sql_state.h" />
+    <ClInclude Include="System\MySQL\include\sslopt-case.h" />
+    <ClInclude Include="System\MySQL\include\sslopt-longopts.h" />
+    <ClInclude Include="System\MySQL\include\sslopt-vars.h" />
+    <ClInclude Include="System\MySQL\include\thr_cond.h" />
+    <ClInclude Include="System\MySQL\include\thr_mutex.h" />
+    <ClInclude Include="System\MySQL\include\thr_rwlock.h" />
+    <ClInclude Include="System\MySQL\include\typelib.h" />
+    <ClInclude Include="System\Network\AsyncSelect\AsyncSelect.h" />
+    <ClInclude Include="System\Network\Network.h" />
+    <ClInclude Include="System\Network\Select\Select.h" />
+    <ClInclude Include="System\Parser\JSON_Parser.h" />
+    <ClInclude Include="System\Parser\Parser.h" />
+    <ClInclude Include="System\Pool\LockFreePool.h" />
+    <ClInclude Include="System\Pool\Pool.h" />
+    <ClInclude Include="System\Pool\QueryPacketPool.h" />
+    <ClInclude Include="System\Pool\ThreadLocalChunk.h" />
+    <ClInclude Include="System\Pool\ThreadLocalPool.h" />
+    <ClInclude Include="System\Profiler\CPU_Profiler.h" />
+    <ClInclude Include="System\Profiler\EthernetProfiler.h" />
+    <ClInclude Include="System\Profiler\PDH_Profiler.h" />
+    <ClInclude Include="System\Profiler\Profiler.h" />
+    <ClInclude Include="System\Profiler\ThreadLocalProfiler.h" />
+    <ClInclude Include="System\Queue\ByteQueue.h" />
+    <ClInclude Include="System\Queue\DoubleByteQueue.h" />
+    <ClInclude Include="System\Queue\LockFreeQueue.h" />
+    <ClInclude Include="System\Queue\Queue.h" />
+    <ClInclude Include="System\Queue\SerialByteQueue.h" />
+    <ClInclude Include="System\Queue\SerialPacketQueue.h" />
+    <ClInclude Include="System\rapidjson\allocators.h" />
+    <ClInclude Include="System\rapidjson\cursorstreamwrapper.h" />
+    <ClInclude Include="System\rapidjson\document.h" />
+    <ClInclude Include="System\rapidjson\encodedstream.h" />
+    <ClInclude Include="System\rapidjson\encodings.h" />
+    <ClInclude Include="System\rapidjson\error\en.h" />
+    <ClInclude Include="System\rapidjson\error\error.h" />
+    <ClInclude Include="System\rapidjson\filereadstream.h" />
+    <ClInclude Include="System\rapidjson\filewritestream.h" />
+    <ClInclude Include="System\rapidjson\fwd.h" />
+    <ClInclude Include="System\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="System\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="System\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="System\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="System\rapidjson\internal\itoa.h" />
+    <ClInclude Include="System\rapidjson\internal\meta.h" />
+    <ClInclude Include="System\rapidjson\internal\pow10.h" />
+    <ClInclude Include="System\rapidjson\internal\regex.h" />
+    <ClInclude Include="System\rapidjson\internal\stack.h" />
+    <ClInclude Include="System\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="System\rapidjson\internal\strtod.h" />
+    <ClInclude Include="System\rapidjson\internal\swap.h" />
+    <ClInclude Include="System\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="System\rapidjson\memorybuffer.h" />
+    <ClInclude Include="System\rapidjson\memorystream.h" />
+    <ClInclude Include="System\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="System\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="System\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="System\rapidjson\pointer.h" />
+    <ClInclude Include="System\rapidjson\prettywriter.h" />
+    <ClInclude Include="System\rapidjson\rapidjson.h" />
+    <ClInclude Include="System\rapidjson\reader.h" />
+    <ClInclude Include="System\rapidjson\schema.h" />
+    <ClInclude Include="System\rapidjson\stream.h" />
+    <ClInclude Include="System\rapidjson\stringbuffer.h" />
+    <ClInclude Include="System\rapidjson\writer.h" />
+    <ClInclude Include="System\Stack\LockFreeStack.h" />
+    <ClInclude Include="System\Timer\Timer.h" />
+    <ClInclude Include="System\Tree\BinaryTree.h" />
+    <ClInclude Include="System\Tree\RedBlackTree.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SubApplication\Console\AdvancedChat\AdvancedChatServer.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\AdvancedChatServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\AdvancedChatServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\ChatLAN_Client.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\ChatLAN_ClientPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\ChatLAN_Server.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\ChatLAN_ServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\ChatLAN_ServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\ChatWAN_Server.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\ChatWAN_ServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedChat\ChatWAN_ServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLAN\AdvancedLAN_Server.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLAN\AdvancedLAN_ServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLAN\AdvancedLAN_ServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLAN\BaseLAN_Server.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLAN\BaseLAN_ServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLAN\BaseLAN_ServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLAN\EchoLAN_Server.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\AdvancedLoginServer.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\AdvancedLoginServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\AdvancedLoginServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\LoginLAN_Client.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\LoginLAN_ClientPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\LoginLAN_ClientPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\LoginLAN_Server.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\LoginLAN_ServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\LoginWAN_Server.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\LoginWAN_ServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\AdvancedLogin\LoginWAN_ServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\Game\GameServer.cpp" />
+    <ClCompile Include="SubApplication\Console\Game\GameServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\Game\GameServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\LockFreeMemoryPool\LockFreeMemoryPool.cpp" />
+    <ClCompile Include="SubApplication\Console\Monitor\MonitorInnerServer++.cpp" />
+    <ClCompile Include="SubApplication\Console\Monitor\MonitorInnerServer+.cpp" />
+    <ClCompile Include="SubApplication\Console\Monitor\MonitorInnerServer.cpp" />
+    <ClCompile Include="SubApplication\Console\Monitor\MonitorOuterServer++.cpp" />
+    <ClCompile Include="SubApplication\Console\Monitor\MonitorOuterServer+.cpp" />
+    <ClCompile Include="SubApplication\Console\Monitor\MonitorOuterServer.cpp" />
+    <ClCompile Include="SubApplication\Console\Monitor\MonitorServer.cpp" />
+    <ClCompile Include="SubApplication\Console\Monitor\MonitorServer+.cpp" />
+    <ClCompile Include="SubApplication\Console\PerformanceDataHelper\PerformanceDataHelper.cpp" />
+    <ClCompile Include="SubApplication\Console\ThreadLocalMemoryPool\ThreadLocalMemoryPool.cpp" />
+    <ClCompile Include="System\DatabaseHandler\DatabaseHandler.cpp" />
+    <ClCompile Include="System\DatabaseHandler\ThreadLocalDatabaseHandler.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_Client\IOCP_Client.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_Client\IOCP_ClientPlus.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_Client\IOCP_ClientPlusPlus.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_InnerServer\IOCP_InnerServer.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_InnerServer\IOCP_InnerServerPlus.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_InnerServer\IOCP_InnerServerPlusPlus.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_OuterServer\IOCP_OuterServer.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_OuterServer\IOCP_OuterServerPlus.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_OuterServer\IOCP_OuterServerPlusPlus.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_Server\IOCP_Server.cpp" />
+    <ClCompile Include="System\Log\Log.cpp" />
+    <ClCompile Include="IntegratedApplicationProject.cpp" />
+    <ClCompile Include="System\MemoryDumper\MemoryDumper.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SubApplication\Console\Console.cpp" />
+    <ClCompile Include="SubApplication\Console\ConsolePlus.cpp" />
+    <ClCompile Include="SubApplication\Console\Experiment\JurassicWarServer.cpp" />
+    <ClCompile Include="SubApplication\Console\Experiment\JurassicWarServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\Experiment\JurassicWarServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\Fighter\FighterServer.cpp" />
+    <ClCompile Include="SubApplication\Console\Fighter\FighterServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\Fighter\FighterServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\IOCP_Chat\IOCP_ChatClient.cpp" />
+    <ClCompile Include="SubApplication\Console\IOCP_Chat\IOCP_ChatClientPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\IOCP_Chat\IOCP_ChatServer.cpp" />
+    <ClCompile Include="SubApplication\Console\IOCP_Chat\IOCP_ChatServerPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\IOCP_Chat\IOCP_ChatServerPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\MySQL\MySQL_Client.cpp" />
+    <ClCompile Include="SubApplication\Console\MySQL\MySQL_ClientPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\MySQL\MySQL_ClientPlusPlus.cpp" />
+    <ClCompile Include="SubApplication\Console\MySQL\MySQL_Example.cpp" />
+    <ClCompile Include="SubApplication\Windows\Windows.cpp" />
+    <ClCompile Include="SubApplication\Windows\WindowsPlus.cpp" />
+    <ClCompile Include="System\Animation\Animation.cpp" />
+    <ClCompile Include="System\Astar\Astar.cpp" />
+    <ClCompile Include="System\BitmapBackBuffer\BitmapBackBuffer.cpp" />
+    <ClCompile Include="System\BitmapImage\BitmapImage.cpp" />
+    <ClCompile Include="System\Bresenham\BresenhamLine.cpp" />
+    <ClCompile Include="System\Exception\Exception.cpp" />
+    <ClCompile Include="System\JumpPointSearch\JumpPointSearch.cpp" />
+    <ClCompile Include="System\MemoryAllocator\MemoryAllocator.cpp" />
+    <ClCompile Include="System\Network\AsyncSelect\AsyncSelect.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_Server\IOCP_ServerPlus.cpp" />
+    <ClCompile Include="System\Network\IOCP\IOCP_Server\IOCP_ServerPlusPlus.cpp" />
+    <ClCompile Include="System\Network\Select\Select.cpp" />
+    <ClCompile Include="System\Parser\JSON_Parser.cpp" />
+    <ClCompile Include="System\Parser\Parser.cpp" />
+    <ClCompile Include="System\Pool\LockFreePool.cpp" />
+    <ClCompile Include="System\Pool\Pool.cpp" />
+    <ClCompile Include="System\Pool\QueryPacketPool.cpp" />
+    <ClCompile Include="System\Pool\ThreadLocalChunk.cpp" />
+    <ClCompile Include="System\Pool\ThreadLocalPool.cpp" />
+    <ClCompile Include="System\Profiler\CPU_Profiler.cpp" />
+    <ClCompile Include="System\Profiler\EthernetProfiler.cpp" />
+    <ClCompile Include="System\Profiler\PDH_Profiler.cpp" />
+    <ClCompile Include="System\Profiler\Profiler.cpp" />
+    <ClCompile Include="System\Profiler\ThreadLocalProfiler.cpp" />
+    <ClCompile Include="System\Queue\ByteQueue.cpp" />
+    <ClCompile Include="System\Queue\DoubleByteQueue.cpp" />
+    <ClCompile Include="System\Queue\LockFreeQueue.cpp" />
+    <ClCompile Include="System\Queue\Queue.cpp" />
+    <ClCompile Include="System\Queue\SerialByteQueue.cpp" />
+    <ClCompile Include="System\Queue\SerialPacketQueue.cpp" />
+    <ClCompile Include="System\Stack\LockFreeStack.cpp" />
+    <ClCompile Include="System\Timer\Timer.cpp" />
+    <ClCompile Include="System\Tree\BinaryTree.cpp" />
+    <ClCompile Include="System\Tree\RedBlackTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IntegratedApplicationProject.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="IntegratedApplicationProject.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatabaseHandler.ini" />
+    <None Include="ChatLAN.ini" />
+    <None Include="ChatWAN.ini" />
+    <None Include="LoginLAN.ini" />
+    <None Include="LoginWAN.ini" />
+    <None Include="MonitorServer.ini" />
+    <None Include="System\MySQL\include\mysql\client_plugin.h.pp" />
+    <None Include="System\MySQL\lib\libmysql.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="System\MySQL\lib\libmysql.lib" />
+    <Library Include="System\MySQL\lib\vs12\mysqlclient.lib" />
+    <Library Include="System\MySQL\lib\vs14\mysqlclient.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
