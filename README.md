@@ -1,5 +1,5 @@
 # Portfolio
 
-* SampleGame : Single Game Code
+* SampleGame : Single Game
 * SampleLibrary : Custom Library
 * SampleServer : Windows IOCP Server
