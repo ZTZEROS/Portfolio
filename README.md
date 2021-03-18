@@ -1,8 +1,8 @@
 # Portfolio
-  Sample Game, SampleLibrary, SampleServer.
+  SampleGame, SampleLibrary, SampleServer.
 
 * SampleGame  
-  Custom Single Game. Resources are not mine. Original creators have the rights to resources for each game.
+  Custom single game. Resources are not mine. Original creators have the rights to resources for each game.
   
   1. Legend of zelda  
 ![Legend of zelda](./SampleGame/LegendOfZelda/PlayScreenshot.jpg)  
@@ -17,16 +17,16 @@
    https://youtu.be/sx2sdj-TO7w
 
 * SampleLibrary  
-  Custom Library. Excluded incomplete library from /SampleServer/SilentNetworkLibrary.
+  Custom library. Excluded incomplete library from ./SampleServer/SilentNetworkLibrary.
   
 * SampleServer  
-  Custom Windows IOCP Server. Client and database are not included.
+  Custom Windows IOCP server. Client and database are not included.
 
   1. IntegratedApplicationProject  
-  Project for practice and study. It contains Login&Chat server, Monitor server, etc.
+  Project for practice and study. It contains LoginServer, ChatServer, MonitorServer, etc.
 
   2. MMO_Server  
-  Game Server for MMO. lock-free linked stack for IOCP applied.  
+  Game server for MMO. Lock-free linked stack for IOCP applied.  
   ![AllServer](./SampleServer/TestingEXE/AllServer.png)
   ![GameServer&Dummy](./SampleServer/TestingEXE/GameServer&Dummy.png)
   ![GameServer](./SampleServer/TestingEXE/GameServer.png) ![MonitorServer](./SampleServer/TestingEXE/MonitorServer.png)
