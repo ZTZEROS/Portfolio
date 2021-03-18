@@ -22,13 +22,13 @@
 * SampleServer  
   Custom Windows IOCP Server. Client and Database is not included.
 
- 1. IntegratedApplicationProject  
+  1. IntegratedApplicationProject  
   Project for practice and study. It contains Login&Chat server, Monitor server, etc.
 
- 2. MMO_Server  
+  2. MMO_Server  
   Game Server for MMO. lock-free linked stack for IOCP applied.
 
- 3. SilentNetworkLibrary  
+  3. SilentNetworkLibrary  
   Static library used in the project above.
 
-![AllServer](/github.com/ZTZEROS/Portfolio/SampleServer/TestingEXE/AllServer.png)
+  ![AllServer](/github.com/ZTZEROS/Portfolio/SampleServer/TestingEXE/AllServer.png)
