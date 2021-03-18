@@ -20,7 +20,7 @@
   Custom Library. Excluded incomplete library from /SampleServer/SilentNetworkLibrary.
   
 * SampleServer  
-  Custom Windows IOCP Server. Client and Database is not included.
+  Custom Windows IOCP Server. Client and database is not included.
 
   1. IntegratedApplicationProject  
   Project for practice and study. It contains Login&Chat server, Monitor server, etc.
@@ -32,3 +32,7 @@
   Static library used in the project above.
 
   ![AllServer](./SampleServer/TestingEXE/AllServer.png)
+  ![GameServer&Dummy](./SampleServer/TestingEXE/GameServer&Dummy.png)
+  ![GameServer](./SampleServer/TestingEXE/GameServer.png)
+  ![MonitorServer](./SampleServer/TestingEXE/MonitorServer.png)
+  
