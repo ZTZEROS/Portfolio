@@ -5,15 +5,15 @@
   Custom Single Game. Resources are not mine. Original creators have the rights to resources for each game.
   
   1. Legend of zelda  
-![Legend of zelda](/github.com/ZTZEROS/Portfolio/SampleGame/LegendOfZelda/PlayScreenshot.jpg)  
+![Legend of zelda](./SampleGame/LegendOfZelda/PlayScreenshot.jpg)  
   https://youtu.be/FyDCROxhJNg
 
   2. Disgaea2  
- ![Disgaea2](/github.com/ZTZEROS/Portfolio/SampleGame/Disgaea2/PlayScreenshot.jpg)  
+ ![Disgaea2](./SampleGame/Disgaea2/PlayScreenshot.jpg)  
    https://youtu.be/FDuLjguT34E
  
   3. Mabinogi Heroes  
- ![Mabinogi Heroes](/github.com/ZTZEROS/Portfolio/SampleGame/MabinogiHeroes/PlayScreenshot.jpg)  
+ ![Mabinogi Heroes](./SampleGame/MabinogiHeroes/PlayScreenshot.jpg)  
    https://youtu.be/sx2sdj-TO7w
 
 * SampleLibrary  
@@ -31,4 +31,4 @@
   3. SilentNetworkLibrary  
   Static library used in the project above.
 
-  ![AllServer](/github.com/ZTZEROS/Portfolio/SampleServer/TestingEXE/AllServer.png)
+  ![AllServer](./SampleServer/TestingEXE/AllServer.png)
