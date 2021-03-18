@@ -26,13 +26,10 @@
   Project for practice and study. It contains Login&Chat server, Monitor server, etc.
 
   2. MMO_Server  
-  Game Server for MMO. lock-free linked stack for IOCP applied.
-
-  3. SilentNetworkLibrary  
-  Static library used in the project above.
-
+  Game Server for MMO. lock-free linked stack for IOCP applied.  
   ![AllServer](./SampleServer/TestingEXE/AllServer.png)
   ![GameServer&Dummy](./SampleServer/TestingEXE/GameServer&Dummy.png)
-  ![GameServer](./SampleServer/TestingEXE/GameServer.png)
-  ![MonitorServer](./SampleServer/TestingEXE/MonitorServer.png)
+  ![GameServer](./SampleServer/TestingEXE/GameServer.png) ![MonitorServer](./SampleServer/TestingEXE/MonitorServer.png)
   
+  3. SilentNetworkLibrary  
+  Static library used in the project above.
