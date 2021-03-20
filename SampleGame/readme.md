@@ -1,7 +1,7 @@
 # SampleGame
 
 * LegendOfZelda
-![Legend of zelda](./SampleGame/LegendOfZelda/PlayScreenshot.jpg)  
+![Legend of zelda](./LegendOfZelda/PlayScreenshot.jpg)  
   
   This game is an imitation of 'Legend of zelda'. It is the result of a team work for a week.  
   We used Windows API(GDI) for implement, and my part was UI and inventory.  
@@ -16,7 +16,7 @@
   https://youtu.be/FyDCROxhJNg  
   
 * Disgaea2  
- ![Disgaea2](./SampleGame/Disgaea2/PlayScreenshot.jpg)  
+ ![Disgaea2](./Disgaea2/PlayScreenshot.jpg)  
  
  This game is an imitation of 'Disgaea2'. It is the result of a team work for a week, too.  
  We used Windows API(GDI), and my part was A*(path finding algorithm), enemy character, player character.  
@@ -32,7 +32,7 @@
  https://youtu.be/FDuLjguT34E  
  
 * Mabinogi Heroes  
- ![Mabinogi Heroes](./SampleGame/MabinogiHeroes/PlayScreenshot.jpg)  
+ ![Mabinogi Heroes](./MabinogiHeroes/PlayScreenshot.jpg)  
    https://youtu.be/sx2sdj-TO7w
    
    <마비노기 영웅전 모작>
