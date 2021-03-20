@@ -1,7 +1,7 @@
 # SampleGame
 
-* LegendOfZelda
-![Legend of zelda](./LegendOfZelda/PlayScreenshot.jpg)  
+* LegendOfZelda  
+  ![Legend of zelda](./LegendOfZelda/PlayScreenshot.jpg)  
   
   This game is an imitation of 'Legend of zelda'. It is the result of a team work for a week.  
   We used Windows API(GDI) for implement, and my part was UI and inventory.  
@@ -16,36 +16,29 @@
   https://youtu.be/FyDCROxhJNg  
   
 * Disgaea2  
- ![Disgaea2](./Disgaea2/PlayScreenshot.jpg)  
- 
- This game is an imitation of 'Disgaea2'. It is the result of a team work for a week, too.  
- We used Windows API(GDI), and my part was A*(path finding algorithm), enemy character, player character.  
- 
- All character resources of enemy and player are loaded automatically by sorted result. For this, we standardizated file name and size of resources.  
- By character action state value, each character is updated differently.  
- 
- Path finding works following step.  
- First, check movable distance of the character.  
- Second, collect the data of the movable tile recursivly.  
- Third, in the list of collected tile, search movable path using A*.  
+  ![Disgaea2](./Disgaea2/PlayScreenshot.jpg)  
   
- https://youtu.be/FDuLjguT34E  
+  This game is an imitation of 'Disgaea2'. It is the result of a team work for a week, too.  
+  We used Windows API(GDI), and my part was A*(path finding algorithm), enemy character, player character.  
+  
+  All character resources of enemy and player are loaded automatically by sorted result. For this, we standardizated file name and size of resources.  
+  By character action state value, each character is updated differently.  
+  
+  Path finding works following step.  
+  First, check movable distance of the character.  
+  Second, collect the data of the movable tile recursivly.  
+  Third, in the list of collected tile, search movable path using A*.  
+  
+  https://youtu.be/FDuLjguT34E  
  
 * Mabinogi Heroes  
- ![Mabinogi Heroes](./MabinogiHeroes/PlayScreenshot.jpg)  
-   https://youtu.be/sx2sdj-TO7w
-   
-   <마비노기 영웅전 모작>
-
-DirectX 9 팀 포트폴리오
-
-- 제작기간 : 4주일
-- 담당파트 : 리소스 탐색 및 추출, 월드맵, NPC, 셰이더
-
-구체에 텍스쳐를 입혀 스카이맵 구현.
-DirectX9 기본 기능 이용.
-Height map 기법으로 지형정보를 생성하고 건물 모델을 배치해 맵 완성.
-그림자 매핑 방식으로 그림자 표현.
-깊이버퍼의 데이터를 가져와 그림자 영역인지를 판정하고 하이트맵의 텍스쳐 rgb값을 조정.
-
-- 녹화영상 : https://youtu.be/sx2sdj-TO7w
+  ![Mabinogi Heroes](./MabinogiHeroes/PlayScreenshot.jpg)  
+  
+  This game is an imitation if 'Mabinogi Heroes'. It is the result of a team work for a month.  
+  We used Windows API and DirectX9. My part was resource abstraction, world map, NPC, shader.  
+  
+  I implemented skymap by drawing texture on sphere. I helped by basic supporting of DirectX in many points.  
+  I created the world map by generating geographical information by Height map technique, then locating building model.  
+  For express shadow, I followed shadow mapping technique. Judge the area of shadow from the data of depth buffer, and adjust rgb value of the texture ofheight map.  
+  
+  https://youtu.be/sx2sdj-TO7w
