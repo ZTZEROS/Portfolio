@@ -2,7 +2,8 @@
   SampleGame, SampleLibrary, SampleServer.
 
 * SampleGame  
-  Custom single game. Resources are not mine. Original creators have the rights to resources for each game.
+  Custom single game. Resources are not mine. Original creators have the rights to resources for each game.  
+  These games are the results of group work.
   
   1. Legend of zelda  
 ![Legend of zelda](./SampleGame/LegendOfZelda/PlayScreenshot.jpg)  
