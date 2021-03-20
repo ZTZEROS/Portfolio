@@ -2,6 +2,7 @@
 
 * LegendOfZelda  
   ![Legend of zelda](./LegendOfZelda/PlayScreenshot.jpg)  
+    
   
   This game is an imitation of 'Legend of zelda'. It is the result of a team work for a week.  
   We used Windows API(GDI) for implement, and my part was UI and inventory.  
@@ -17,6 +18,7 @@
   
 * Disgaea2  
   ![Disgaea2](./Disgaea2/PlayScreenshot.jpg)  
+    
   
   This game is an imitation of 'Disgaea2'. It is the result of a team work for a week, too.  
   We used Windows API(GDI), and my part was A*(path finding algorithm), enemy character, player character.  
@@ -33,6 +35,7 @@
  
 * Mabinogi Heroes  
   ![Mabinogi Heroes](./MabinogiHeroes/PlayScreenshot.jpg)  
+    
   
   This game is an imitation if 'Mabinogi Heroes'. It is the result of a team work for a month.  
   We used Windows API and DirectX9. My part was resource abstraction, world map, NPC, shader.  
