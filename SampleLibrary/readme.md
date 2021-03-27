@@ -1,7 +1,7 @@
 # SampleLibrary
 
 * Astar  
-  A* is an path-finding algorithm for tile map.  
+  A* is a path-finding algorithm for tile map.  
   
 * Breseham
 * DatabaseHandler
