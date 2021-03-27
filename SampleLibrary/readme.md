@@ -1,6 +1,8 @@
 # SampleLibrary
 
-* Astar
+* Astar  
+  A* is an path-finding algorithm for tile map.  
+  
 * Breseham
 * DatabaseHandler
 * Exception
