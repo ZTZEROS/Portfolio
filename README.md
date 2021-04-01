@@ -18,7 +18,7 @@
   부분확대 및 방향키로 표시지역 변경 가능.   
   월드맵 이미지를 128층으로 나누어 각 층마다 조금씩 확대해 출력하는 기법으로 오목거울에 비친 것처럼 표현.   
    
-    - 녹화영상 : https://youtu.be/FyDCROxhJNg   
+  녹화영상 : https://youtu.be/FyDCROxhJNg   
 
   2. 디스가이아2 모작   
   ![Disgaea2](./SampleGame/Disgaea2/PlayScreenshot.jpg)   
@@ -33,7 +33,7 @@
   캐릭터별로 설정된 이동가능거리에 따라 목적지가 될 수 있는 타일을 재귀적으로 수집.   
   수집된 타일 목록 내에서 A* 를 이용하여 이동가능 타일 경로 검색.   
    
-    - 녹화영상 : https://youtu.be/FDuLjguT34E   
+  녹화영상 : https://youtu.be/FDuLjguT34E   
 
   3. 마비노기 영웅전 모작   
   ![Mabinogi Heroes](./SampleGame/MabinogiHeroes/PlayScreenshot.jpg)   
@@ -49,7 +49,7 @@
   그림자 매핑 방식으로 그림자 표현.   
   깊이버퍼의 데이터를 가져와 그림자 영역인지를 판정하고 하이트맵의 텍스쳐 rgb값을 조정.   
    
-    - 녹화영상 : https://youtu.be/sx2sdj-TO7w   
+  녹화영상 : https://youtu.be/sx2sdj-TO7w   
 
 * SampleLibrary   
   
