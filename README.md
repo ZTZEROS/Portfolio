@@ -3,10 +3,8 @@
 
 * SampleGame  
   
-  1. Legend of zelda(imitation)  
+  1. 젤다의 전설 모작
   ![Legend of zelda](./SampleGame/LegendOfZelda/PlayScreenshot.jpg)  
-  
-  <젤다의 전설 모작>
   
   Windows API(GDI) 팀 포트폴리오  
   
@@ -20,12 +18,10 @@
   부분확대 및 방향키로 표시지역 변경 가능.  
   월드맵 이미지를 128층으로 나누어 각 층마다 조금씩 확대해 출력하는 기법으로 오목거울에 비친 것처럼 표현.  
   
-- 녹화영상 : https://youtu.be/FyDCROxhJNg  
+  - 녹화영상 : https://youtu.be/FyDCROxhJNg  
   
-  2. Disgaea2(imitation)  
+  2. 디스가이아2 모작
   ![Disgaea2](./SampleGame/Disgaea2/PlayScreenshot.jpg)  
-  
-  <디스가이아2 모작>
   
   Windows API(GDI) 팀 포트폴리오  
   
@@ -37,12 +33,10 @@
   캐릭터별로 설정된 이동가능거리에 따라 목적지가 될 수 있는 타일을 재귀적으로 수집.  
   수집된 타일 목록 내에서 A* 를 이용하여 이동가능 타일 경로 검색.  
   
-- 녹화영상 : https://youtu.be/FDuLjguT34E  
+  - 녹화영상 : https://youtu.be/FDuLjguT34E  
   
-  3. Mabinogi Heroes(imitation)  
+  3. 마비노기 영웅전 모작  
   ![Mabinogi Heroes](./SampleGame/MabinogiHeroes/PlayScreenshot.jpg)  
-  
-  <마비노기 영웅전 모작>  
   
   DirectX 9 팀 포트폴리오  
   
@@ -55,7 +49,7 @@
   그림자 매핑 방식으로 그림자 표현.  
   깊이버퍼의 데이터를 가져와 그림자 영역인지를 판정하고 하이트맵의 텍스쳐 rgb값을 조정.  
   
-- 녹화영상 : https://youtu.be/sx2sdj-TO7w  
+  - 녹화영상 : https://youtu.be/sx2sdj-TO7w  
   
 * SampleLibrary  
   
@@ -103,16 +97,16 @@
   업데이트 속도나 상태 출력 속도를 조절하기 위한 타이머.
 
 * SampleServer  
-  Custom Windows IOCP server. Client and database are not included.
+  자작 Windows IOCP 서버이다. 클라이언트, 데이터베이스 미포함.
 
   1. IntegratedApplicationProject  
-  Project for practice and study. It contains LoginServer, ChatServer, MonitorServer, etc.
+  LoginServer, ChatServer, MonitorServer 등을 포함한 연구 및 실습용 프로젝트.
 
   2. MMO_Server  
-  Game server for MMO. Lock-free linked stack for IOCP applied.  
+  MMO게임을 위한 IOCP 서버이다. 락프리 링크드 스택 적용.
   ![AllServer](./SampleServer/TestingEXE/AllServer.png)
   ![GameServer&Dummy](./SampleServer/TestingEXE/GameServer&Dummy.png)
   ![GameServer](./SampleServer/TestingEXE/GameServer.png) ![MonitorServer](./SampleServer/TestingEXE/MonitorServer.png)
   
   3. SilentNetworkLibrary  
-  Static library used in the project above.
+  위의 프로젝트들에 사용한 라이브러리를 정적 라이브러리로 따로 만든 것.
