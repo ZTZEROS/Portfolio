@@ -1,7 +1,7 @@
 # SampleGame
 
-1 젤다의 전설 모작   
-  ![Legend of zelda](./SampleGame/LegendOfZelda/PlayScreenshot.jpg)   
+  1 젤다의 전설 모작   
+  ![Legend of zelda](./LegendOfZelda/PlayScreenshot.jpg)   
   
   Windows API(GDI) 팀 포트폴리오   
    
@@ -17,8 +17,8 @@
    
    ㅡ 녹화영상 : https://youtu.be/FyDCROxhJNg   
 
-2 디스가이아2 모작   
-  ![Disgaea2](./SampleGame/Disgaea2/PlayScreenshot.jpg)   
+  2 디스가이아2 모작   
+  ![Disgaea2](./Disgaea2/PlayScreenshot.jpg)   
    
   Windows API(GDI) 팀 포트폴리오   
    
@@ -32,8 +32,8 @@
    
   ㅡ 녹화영상 : https://youtu.be/FDuLjguT34E   
 
-3 마비노기 영웅전 모작   
-  ![Mabinogi Heroes](./SampleGame/MabinogiHeroes/PlayScreenshot.jpg)   
+  3 마비노기 영웅전 모작   
+  ![Mabinogi Heroes](./MabinogiHeroes/PlayScreenshot.jpg)   
    
   DirectX 9 팀 포트폴리오   
    
